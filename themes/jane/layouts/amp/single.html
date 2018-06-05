@@ -1,0 +1,16 @@
+ {{ partial "structure/head.html" . }}
+<header>
+	<a href="/" class="brand">
+		Regra de Três
+	</a>
+	{{ partial "navigation/menu.html" }}
+</header>
+{{ partial "navigation/sidebar.html" }}
+<main>
+	{{ partial "navigation/breadcrumbs" . }}
+	{{ .Content }}
+	{{ partial "amp/comments.html" . }}
+</main>
+
+<hr></hr>
+{{ partial "structure/foot.html" . }}

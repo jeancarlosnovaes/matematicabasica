@@ -1,0 +1,5 @@
+{{ partial "seo/structured/website.html" . }}
+{{ partial "seo/structured/organization.html" . }}
+{{ partial "seo/structured/breadcrumb.html" . }}
+
+{{ if eq .Params.structured.type "NewsArticle" }}{{ partial "seo/structured/article.html" . }}{{ end }}

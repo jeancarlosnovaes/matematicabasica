@@ -1,0 +1,114 @@
+baseURL = "http://localhost:1313/"
+title = "Matemática Básica"
+enableRobotsTXT = true
+enableEmoji = true
+theme = "jane"
+
+[permalinks]
+	post = "/:filename/"
+	amp = "/:filename/amp/"
+
+hasCJKLanguage = false                    # has chinese/japanese/korean ?
+paginate = 3                                             
+rssLimit = 20                             # Limit Entry Count to Rss file
+disqusShortname = "matematicabasica"      # disqus_shortname
+googleAnalytics = "UA-63562677-5"                      # UA-XXXXXXXX-X
+copyright = "Matemática Básica"           # default: author.name 
+# uglyURLs = true                         # more info: https://gohugo.io/content-management/urls/#ugly-urls
+
+# language support                        # en / zh-cn / other... translations present in i18n/
+defaultContentLanguage = "en"             # Default language to use
+
+[languages.en]
+	languageCode = "pt"
+
+[author]                  				  # essential
+	name = "Jean Carlos Novaes"
+
+[sitemap]                 				  # essential 
+	changefreq = "weekly"
+	priority = 0.5
+	filename = "sitemap.xml"
+
+[[menu.main]]             				  # config your menu
+	name = "Home"
+	weight = 10
+	identifier = "home"
+	url = "/"
+
+[[menu.main]]
+	name = "Assuntos"
+	weight = 40
+	identifier = "categories"
+	url = "/categories/"
+
+[params]
+	#amp = true
+	# debug = false             			# If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
+	# uglyURLs = true          				# You must set true after use uglyURLs in site (above). because $.Site.UglyURLs can not import.
+	since = "2015"            				# Site creation time          # 站点建立时间
+	homeFullContent = false   				# if false, show post summaries on home page. Othewise show full content.
+	rssFullContent = true     				# if false, Rss feed instead of the summary
+
+	# site info (optional)                                  
+	logoTitle = "Matemática Básica"        # default: the title value
+	keywords = [ "Matematica Básica", "Ensino Medio","Ensino Fundamental", "Matematica Financeira" ]
+	description = "Matemática Básica sobre temas do Ensino Fundamental, Ensino Médio, Ensino Superior e Matemática Financeira. Confira os assuntos e prepare-se para o Enem, Concursos e Vestibulares"
+
+	# paginate of archives, tags and categories           
+	archive-paginate = 50
+
+	# paginate style, default use numbered pagination links
+	# if true, use original "Previous" and "Next" links.
+	paginateOriginalStyle = true
+
+	# The date format to use; for a list of valid formats, see https://gohugo.io/functions/format/
+	dateFormatToUse = "02/01/2006"
+
+	# show word count and read time ?                       
+	moreMeta = true
+
+	
+	# Some global options, you can also close or open something in front matter for a single post, see more information from `archetypes/default.md`.
+	toc = true                                                                           
+	bootcdn = true           # In china. @Deprecated: use [params.publicCDN]             # bootcdn(@Deprecated: [params.publicCDN])                            
+	contentCopyright = '<a rel="license noopener" href="http://localhost:1313/licenca">Licença de Conteúdo</a>'
+
+	google_verification = ""  # Google_Verification
+
+	organizationName = "Novaes Network"
+	organizationLogo = "https://matematicabasica.net/images/organization-logo.png"
+	organizationAddress = "Pç. Cândido Leones, 352, 46540-000 - Ibipitanga - BA, Brasil"
+	socialProfiles = "https://matematicabasica.net/"
+	orgURL = "https://novaes.network"
+	organizationLogoHeight = "100"
+	organizationLogoWidth = "320"
+
+	image = "https://matematicabasica.net/images/matematicabasica.png"
+  	width = "1600"
+  	height = "900"
+  	link = "https://matematicabasica.net/adicao/"
+  	license = "Licença de Conteúdo"
+  	license_link = "https://matematicabasica.net/licenca/"
+
+	# Link custom CSS and JS assets
+	#   (relative to /static/css and /static/js respectively)
+	customCSS = []            # if ['custom.css'], load '/static/css/custom.css' file
+	customJS = []             # if ['custom.js'], load '/static/js/custom.js' file
+
+	# enable 'fork me on github', see https://blog.github.com/2008-12-19-github-ribbons/
+	# forkMeOnGithub = "https://github.com/xianmin/hugo-theme-jane"
+
+	[params.publicCDN]        # load these files from public cdn                         
+		enable = true
+		jquery = '<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>'
+
+
+	[params.social]                                        
+		a-email = "mailto:your@email.com"
+		c-twitter = "http://localhost:1313"
+		d-facebook = "http://localhost:1313"
+		e-linkedin = "http://localhost:1313"
+		f-google = "http://localhost:1313"
+		l-tumblr = "http://localhost:1313"
+		m-instagram = "http://localhost:1313"

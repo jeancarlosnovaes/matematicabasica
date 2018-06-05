@@ -1,0 +1,21 @@
+<!-- Opengraph !-->
+<meta property="og:locale" content="pt_BR"/>
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{ .Title }}">
+<meta property="article:published_time" content="{{ .PublishDate.Format "2006-01-02T15:04:05" }}"/>
+<meta property="article:modified_time" content="{{ .Date.Format "2006-01-02T15:04:05"  }}"/>
+<meta property="og:description" content="{{ .Site.Params.description }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:image" content="{{ .Params.image.src }}">
+<meta property="og:image:alt" content="{{ .Params.author.title }}"/>
+<meta property="og:image:width" content="{{ .Params.image.width }}"/>
+<meta property="og:image:height" content="{{ .Params.image.height }}"/>
+<meta property="article:author" content="{{ .Params.author.name }}">
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:description" content="{{ .Site.Params.description }}"/>
+<meta name="twitter:title" content="{{ .Site.Title }}"/>
+<meta name="twitter:image" content="{{ .Params.image.src }}"/>
+
+
+

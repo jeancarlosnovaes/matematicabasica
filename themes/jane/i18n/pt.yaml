@@ -1,0 +1,73 @@
+- id: archive
+  translation: Mapa do Site
+
+- id: tags
+  translation: Tags
+
+- id: tag
+  translation: "Tag: "
+
+- id: categories
+  translation: Categorias
+
+- id: category
+  translation: "Categoria: "
+
+# posts
+- id: prev
+  translation: Anterior
+
+- id: next
+  translation: Próximo
+
+- id: prev_post
+  translation: Anterior
+
+- id: next_post
+  translation: Seguinte
+
+- id: toc
+  translation: Sumário
+
+- id: readmore
+  translation: Leia mais
+
+- id: seeMarkDown
+  translation: Versão de Markdownn »
+
+- id: loadDisqus
+  translation: Mostrar Comentários
+
+# posts.header
+- id: wordCount
+  translation: "{{.Count}} palavras"
+
+- id: readingTime
+  translation: "{{.Count}} minutos leitura"
+
+# copyright
+- id: author
+  translation: Autor
+
+- id: lastMod
+  translation: Última modificação
+
+- id: markdown
+  translation: Markdown
+
+- id: license
+  translation: Licença
+
+# counter
+- id: counter_archives
+  translation: "{{.Count}} Posts no Total"
+
+- id: counter_tagcloud
+  translation: "{{.Count}} Tags no Total"
+
+- id: counter_categories
+  translation: "{{.Count}} Categorias no Total"
+
+# other
+- id: morePost
+  translation: "Mais Posts >>>"

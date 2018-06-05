@@ -1,0 +1,6 @@
+<link rel="amphtml" href="{{ .Permalink }}amp/">
+{{ partial "seo/structured/website.html" . }}
+{{ partial "seo/structured/organization.html" . }}
+{{ partial "seo/structured/breadcrumb.html" . }}
+
+{{ if eq .Params.type "post" }}{{ partial "seo/structured/article.html" . }}{{ end }}

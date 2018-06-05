@@ -1,0 +1,36 @@
+<script type="application/ld+json">
+{
+	"@context": "http://schema.org",
+	"@type": "NewsArticle",
+	"author": {
+		"name" : "{{ $.Site.Author.name }}"
+	},
+	"headline": "{{ .Title }}",
+	"description": "{{ .Params.description }}",
+	"wordCount": {{ .WordCount }},
+	"datePublished" : "{{ .PublishDate.Format "2006-01-02T15:04:05" }}",
+	"dateModified" : "{{ .Date.Format "2006-01-02T15:04:05"  }}",
+	"image" : {
+		"@context": "http://schema.org",
+		"@type": "ImageObject",
+		"author": "{{ $.Site.Author.name }}",
+		"url": "{{ $.Site.Params.image }}",
+		"datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05" }}",
+		"name": "{{ $.Site.Title }}",
+		"height" : {{ $.Site.Params.Height }},
+		"width" : {{ $.Site.Params.width }},
+		"license" : "{{ $.Site.Params.license_link }}"
+		},
+	"mainEntityOfPage" : "{{ .Permalink }}",
+	"publisher" : {
+		"@type": "Organization",
+		"name" : "{{ $.Site.Params.organizationName }}",
+		"logo" : {
+			"@type" : "ImageObject",
+			"url" : "{{ $.Site.Params.organizationLogo }}",
+			"height" : {{ $.Site.Params.organizationLogoHeight }},
+			"width" : {{ $.Site.Params.organizationLogoWidth }}
+		}
+	}
+}
+</script>

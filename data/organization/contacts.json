@@ -1,0 +1,9 @@
+{
+	"contactPoint": [{
+		"@type": "ContactPoint",
+		"email": "publicidadenovaes at gmail dot com",
+		"contactType": "Anúncios",
+		"contactOption": "Email",
+		"areaServed": "BR"
+	}]
+}

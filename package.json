@@ -1,0 +1,42 @@
+{
+	"name": "regradetres",
+	"version": "1.0.0",
+	"description": "Regra de tres simples e composta",
+	"main": "",
+	"scripts": {
+		"build": "webpack",
+		"demo": "hugo --contentDir='./content' --config='config.toml' ",
+		"dev:assets": "webpack --watch --display='errors-only' ",
+		"dev:site": "hugo server --buildDrafts --contentDir='./content' --config='config.toml' ",
+		"dev": "concurrently 'npm run dev:assets' 'npm run dev:site' ",
+		"clean": "rm -rf ./public"
+	},
+	"author": "xianmin",
+	"license": "MIT",
+	"devDependencies": {
+		"ajv": "^6.5.0",
+		"all-contributors-cli": "^4.11.1",
+		"autoprefixer": "^8.5.1",
+		"babel-core": "^6.26.0",
+		"babel-loader": "^7.1.3",
+		"babel-plugin-transform-runtime": "^6.23.0",
+		"babel-preset-env": "^1.7.0",
+		"babel-preset-es2015": "^6.24.1",
+		"babel-preset-stage-2": "^6.24.1",
+		"concurrently": "^3.5.1",
+		"css-loader": "^0.28.10",
+		"expose-loader": "^0.7.3",
+		"extract-text-webpack-plugin": "^3.0.0",
+		"file-loader": "^1.1.11",
+		"html-webpack-plugin": "^3.2.0",
+		"iconfont-webpack-plugin": "^1.2.0",
+		"node-sass": "^4.9.0",
+		"postcss-loader": "^2.1.3",
+		"sass-loader": "^6.0.7",
+		"style-loader": "^0.20.2",
+		"uglifyjs-webpack-plugin": "^1.2.2",
+		"url-loader": "^1.0.1",
+		"webpack": "^3.11.0"
+	},
+	"dependencies": {}
+}
