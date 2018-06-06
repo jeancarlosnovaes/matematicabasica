@@ -43,12 +43,14 @@ defaultContentLanguage = "en"             # Default language to use
 	url = "/categories/"
 
 [params]
-	#amp = true
+	amp = true
 	# debug = false             			# If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
 	# uglyURLs = true          				# You must set true after use uglyURLs in site (above). because $.Site.UglyURLs can not import.
 	since = "2015"            				# Site creation time          # 站点建立时间
 	homeFullContent = false   				# if false, show post summaries on home page. Othewise show full content.
 	rssFullContent = true     				# if false, Rss feed instead of the summary
+	themeColor = "#ff1d55"
+    adsensePublisher = "ca-pub-4058042462114422"
 
 	# site info (optional)                                  
 	logoTitle = "Matemática Básica"        # default: the title value
